@@ -60,7 +60,7 @@ public
 
 # Mac files
 .DS_Store
-
+.env.development
 # Yarn
 yarn-error.log
 .pnp/

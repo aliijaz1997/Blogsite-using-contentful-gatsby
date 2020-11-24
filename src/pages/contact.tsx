@@ -8,3 +8,4 @@ function Contact () {
         </Layout>
     )
 }
+export default Contact;

@@ -5,6 +5,7 @@ import { fade, makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
@@ -25,6 +26,11 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     menuButton: {
       marginRight: theme.spacing(2),
+    },
+    button: {
+      '& > *': {
+        margin: theme.spacing(1),
+      },
     },
     title: {
       display: 'none',
@@ -84,7 +90,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-const Header = ({ siteTitle }) => {
+const Header = ({ }) => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -92,9 +98,6 @@ const Header = ({ siteTitle }) => {
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
-  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
@@ -105,9 +108,6 @@ const Header = ({ siteTitle }) => {
     handleMobileMenuClose();
   };
 
-  const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
@@ -139,7 +139,7 @@ const Header = ({ siteTitle }) => {
     </Menu>);
   return (
     <div className={classes.grow}>
-      <AppBar color = "inherit" style = {{backgroundColor : "firebrick"}} position="static">
+      <AppBar color="inherit" style={{ backgroundColor: "white" }} position="static">
         <Toolbar>
           <IconButton
             edge="start"
@@ -150,7 +150,7 @@ const Header = ({ siteTitle }) => {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            Dynamic Blogs
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -167,10 +167,12 @@ const Header = ({ siteTitle }) => {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-          <Link to="/">Home</Link>
-          <Link to = "/about">About</Link>
-          <Link to = "/blog">Blogs</Link>
-          <Link to = "/contact">Contact US</Link>
+            <div className={classes.button}>
+              <Button style= {{backgroundColor : "	black"}} variant="contained"><Link to="/"><span style = {{color : "white"}}>Home</span></Link></Button>
+              <Button style= {{backgroundColor : "	black"}} variant="contained"><Link to="/about"><span style = {{color : "white"}}>About</span></Link></Button>
+              <Button style= {{backgroundColor : "	black"}} variant="contained"><Link to="/blog"><span style = {{color : "white"}}>Blogs</span></Link></Button>
+              <Button style= {{backgroundColor : "	black"}} variant="contained"><Link to="/contact"><span style = {{color : "white"}}>Contact US</span></Link></Button>
+            </div>
           </div>
           <div className={classes.sectionMobile}>
           </div>
@@ -180,6 +182,6 @@ const Header = ({ siteTitle }) => {
       {renderMenu}
     </div>
   );
-            }
+}
 
 export default Header

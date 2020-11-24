@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-
+import InstructionOnHome from "../components/instructiononhome"
+import MainContainer from "../components/mainandcombinedcomponents"
 const IndexPage = () => (
   <Layout>
-    <div>Hello from Home Page</div>
+      <InstructionOnHome />
+      <MainContainer/>
   </Layout>
 )
 

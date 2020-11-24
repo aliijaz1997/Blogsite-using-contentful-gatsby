@@ -11,8 +11,9 @@ const useStyles = makeStyles((theme: Theme) =>
     paper: {
       padding: theme.spacing(2),
       textAlign: 'center',
-      color: theme.palette.text.secondary,
-      backgroundColor : "firebrick",
+      // color: theme.palette.text.secondary,
+      backgroundColor : "black",
+      color : "darkgrey"
     },
   }),
 );
@@ -22,13 +23,11 @@ export default function Footer() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
               Copy right created by Hifz ur Rehman Ali
           </Paper>
         </Grid>
-      </Grid>
     </div>
   );
 }

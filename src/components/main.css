@@ -1,0 +1,14 @@
+.container {
+    margin-top: 20px;
+    padding: 5px;
+    display: flex;
+    max-width: 900px;
+    text-align: center;
+}
+.latestnews {
+    position: static;
+}
+.blogbutton {
+    margin-top: 30px;
+    /* margin-left: 20rem; */
+}

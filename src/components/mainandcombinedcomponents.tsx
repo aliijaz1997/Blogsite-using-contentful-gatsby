@@ -11,7 +11,7 @@ export default function MainContainer() {
             <Container fixed>
                 <div className="container">
                     <div className="latestnews">
-                        <LatestNews/>
+                        <LatestNews />
                     </div>
                     <div className="blogbutton">
                         <Buttonforblog />

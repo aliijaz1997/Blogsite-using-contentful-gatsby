@@ -28,6 +28,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `@contentful/gatsby-transformer-contentful-richtext`,
     {
       resolve: `gatsby-source-contentful`,
       options: {

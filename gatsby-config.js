@@ -28,6 +28,20 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyDM7VpbgykCjVab_3oimEzGu5BzmE03HOQ",
+          authDomain: "blog-site-a3d9d.firebaseapp.com",
+          databaseURL: "https://blog-site-a3d9d.firebaseio.com",
+          projectId: "blog-site-a3d9d",
+          storageBucket: "blog-site-a3d9d.appspot.com",
+          messagingSenderId: "486164789431",
+          appId: "1:486164789431:web:4943eb6b840c1c217ff532"
+        }
+      }
+    },
     `@contentful/gatsby-transformer-contentful-richtext`,
     {
       resolve: `gatsby-source-contentful`,

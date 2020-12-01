@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
 // import Img from "gatsby-image"
-import Layout from "../components/layout"
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
@@ -12,7 +11,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
 import { Button, CardActions, CardHeader, Container } from "@material-ui/core";
-
+import Layout from "../components/layout";
 const useStyles = makeStyles({
   root: {
     backgroundImage: 'url(https://i.pinimg.com/originals/f8/6d/46/f86d4605e4013746b8a28b8149d914d8.jpg)'
@@ -89,6 +88,7 @@ const Blog = () => {
           <CardContent>
             <Typography className={classes.title} gutterBottom>
               <h1 style={{ fontSize: "5rem" }} >Here you go for Blogs</h1>
+              <Link to = "/auth">Log in option</Link>
             </Typography>
           </CardContent>
         </Card>

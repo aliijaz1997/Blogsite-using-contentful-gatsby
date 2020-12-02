@@ -7,8 +7,8 @@ const useStyles = makeStyles({
     root: {
         minWidth: 345,
         minHeight: 300,
-        marginTop : 50,
-        marginRight : "2rem"
+        marginTop: 50,
+        marginRight: "2rem"
     },
     media: {
         height: 250,
@@ -21,35 +21,35 @@ function About() {
     return (
         <Layout>
             <div
-            style = {
-                {
-                    display : 'flex',
-                    alignItems : "center",
-                    justifyContent : "space-between",
-                    marginBottom : "2rem"
+                style={
+                    {
+                        display: 'flex',
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        marginBottom: "2rem"
+                    }
                 }
-            }
             >
-            <div style = {{marginLeft : "2rem"}}>
-              <h1 style = {{color : "darkorange"}}>About US</h1>
-              <h2 style = {{color : "darkgrey"}}>Who we are? What we are?</h2>
-              <span style = {{color : "green"}}>
-                  We basically are for the service
-                  <br/>
+                <div style={{ marginLeft: "2rem" }}>
+                    <h1 style={{ color: "darkorange" }}>About US</h1>
+                    <h2 style={{ color: "darkgrey" }}>Who we are? What we are?</h2>
+                    <span style={{ color: "green" }}>
+                        We basically are for the service
+                  <br />
                   of blogs. Our aim is to provide
-                  <br/>
-                  the user with the best blogger 
-                  <br/>
+                  <br />
+                  the user with the best blogger
+                  <br />
                   experience.
-                  </span>  
-                  </div>
-            <div className = {classes.root}>
-                {/* <Link to="/blog"> */}
-                        <CardMedia
-                            className={classes.media}
-                            image="https://en.pimg.jp/035/771/922/1/35771922.jpg"
-                        />
-                {/* </Link> */}
+                  </span>
+                </div>
+                <div className={classes.root}>
+                    <Link to="/blog">
+                    <CardMedia
+                        className={classes.media}
+                        image="https://en.pimg.jp/035/771/922/1/35771922.jpg"
+                    />
+                    </Link>
                 </div>
             </div>
         </Layout>

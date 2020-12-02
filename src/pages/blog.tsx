@@ -88,7 +88,7 @@ const Blog = () => {
           <CardContent>
             <Typography className={classes.title} gutterBottom>
               <h1 style={{ fontSize: "5rem" }} >Here you go for Blogs</h1>
-              <Link to = "/auth">Log in option</Link>
+              {/* <Link to = "/blog">Log in option</Link> */}
             </Typography>
           </CardContent>
         </Card>

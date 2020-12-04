@@ -10,8 +10,9 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
-import { Button, CardActions, CardHeader, Container } from "@material-ui/core";
+import { Button, CardActions, CardHeader } from "@material-ui/core";
 import Layout from "../components/layout";
+import { isLoggedIn } from "../utils/auth"
 const useStyles = makeStyles({
   root: {
     backgroundImage: 'url(https://i.pinimg.com/originals/f8/6d/46/f86d4605e4013746b8a28b8149d914d8.jpg)'
@@ -88,7 +89,6 @@ const Blog = () => {
           <CardContent>
             <Typography className={classes.title} gutterBottom>
               <h1 style={{ fontSize: "5rem" }} >Here you go for Blogs</h1>
-              <Link to = "/auth">Log in option</Link>
             </Typography>
           </CardContent>
         </Card>

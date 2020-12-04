@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div style = {{justifyContent : "center"}} >
+      <div style={{ justifyContent: "center" }} >
         <main>{children}</main>
       </div>
       <Footer />

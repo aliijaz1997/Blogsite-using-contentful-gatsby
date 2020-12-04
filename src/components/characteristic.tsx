@@ -24,23 +24,23 @@ const useStyles = makeStyles({
     backgroundColor: "darkorange",
     height: "400px"
   },
-  media : {
-    width : "30rem",
-    height : "25rem",
-    marginLeft : "40rem",
-    marginTop : "-13.7rem"
+  media: {
+    width: "30rem",
+    height: "25rem",
+    marginLeft: "40rem",
+    marginTop: "-13.7rem"
   },
-  media1 : {
-    width : "30rem",
-    height : "25rem",
-    marginLeft : "40rem",
-    marginTop : "-12.3rem"
+  media1: {
+    width: "30rem",
+    height: "25rem",
+    marginLeft: "40rem",
+    marginTop: "-12.3rem"
   },
-  media2 : {
-    width : "30rem",
-    height : "25rem",
-    marginLeft : "40rem",
-    marginTop : "-16.8rem"
+  media2: {
+    width: "30rem",
+    height: "25rem",
+    marginLeft: "40rem",
+    marginTop: "-16.8rem"
   },
   bullet: {
     display: 'inline-block',
@@ -61,78 +61,78 @@ export default function Characteristic() {
 
   return (
     <>
-    <Card className={classes.root1}>
-      <CardContent >
-        <Typography style = {{color : "white"}} className={classes.pos} color="textSecondary">
-          <h2>Get a free domain</h2>
-          <span>
-            Give your blog the perfect home. Get a free domain
-            <br/>
+      <Card className={classes.root1}>
+        <CardContent >
+          <Typography style={{ color: "white" }} className={classes.pos} color="textSecondary">
+            <h2>Get a free domain</h2>
+            <span>
+              Give your blog the perfect home. Get a free domain
+            <br />
             or buy a custom domain with just a few clicks.
-            <br/>
+            <br />
             This will enable you to feel free while using
-            <br/>
+            <br />
             the blogsite. Ways are out here just dont waste
-            <br/>
+            <br />
             and grab the oppurtunity
           </span>
-        </Typography>
-        <CardMedia
-          className={classes.media}
-          image="https://thumbs.dreamstime.com/b/alphabet-pattern-background-wallpaper-design-alphabet-pattern-background-wallpaper-use-design-layouts-content-177930820.jpg"
-          title="Contemplative Reptile"
-        />
-      </CardContent>
-    </Card>
-     <Card className={classes.root2}>
-     <CardContent >
-       <Typography style = {{color : "white"}} className={classes.pos} color="textSecondary">
-         <h2>Earn Money</h2>
-         <span>
-            Get paid for your hard work. Google AdSense
-            <br/>
+          </Typography>
+          <CardMedia
+            className={classes.media}
+            image="https://thumbs.dreamstime.com/b/alphabet-pattern-background-wallpaper-design-alphabet-pattern-background-wallpaper-use-design-layouts-content-177930820.jpg"
+            title="Contemplative Reptile"
+          />
+        </CardContent>
+      </Card>
+      <Card className={classes.root2}>
+        <CardContent >
+          <Typography style={{ color: "white" }} className={classes.pos} color="textSecondary">
+            <h2>Earn Money</h2>
+            <span>
+              Get paid for your hard work. Google AdSense
+            <br />
             can automatically display relevant target
-            <br/>
+            <br />
             targeted ads on your blog so that you can
-            <br/>
+            <br />
             earn money by posting about your passion
-            
+
           </span>
-       </Typography>
-       <CardMedia
-          className={classes.media1}
-          image="https://wallpapercave.com/wp/YW7AWV7.jpg"
-          title="Contemplative Reptile"
-        />
-     </CardContent>
-   </Card>
-    <Card className={classes.root3}>
-    <CardContent >
-      <Typography className={classes.pos} color="textSecondary">
-      <h2>Know your audience</h2>
-         <span>
-           Find out which posts are hit with 
-           <br/>
+          </Typography>
+          <CardMedia
+            className={classes.media1}
+            image="https://wallpapercave.com/wp/YW7AWV7.jpg"
+            title="Contemplative Reptile"
+          />
+        </CardContent>
+      </Card>
+      <Card className={classes.root3}>
+        <CardContent >
+          <Typography className={classes.pos} color="textSecondary">
+            <h2>Know your audience</h2>
+            <span>
+              Find out which posts are hit with
+           <br />
            Blogger's built in analytics. You'll
-           <br/>
+           <br />
            see where your audience is coming from
-           <br/>
-           and what they are interested in. You 
-           <br/>
+           <br />
+           and what they are interested in. You
+           <br />
            can even connect your blog directly to
-           <br/>
+           <br />
            Google Analytics for a more detailed
-           <br/>
+           <br />
            look.
           </span>
-      </Typography>
-      <CardMedia
-          className={classes.media2}
-          image="https://cdn1.vectorstock.com/i/1000x1000/98/30/yellow-world-map-vector-22369830.jpg"
-          title="Contemplative Reptile"
-        />
-    </CardContent>
-  </Card>
-  </>
+          </Typography>
+          <CardMedia
+            className={classes.media2}
+            image="https://cdn1.vectorstock.com/i/1000x1000/98/30/yellow-world-map-vector-22369830.jpg"
+            title="Contemplative Reptile"
+          />
+        </CardContent>
+      </Card>
+    </>
   );
 }

@@ -12,11 +12,11 @@ import { Link } from 'gatsby';
 const useStyles = makeStyles({
   root: {
     minWidth: 345,
-    minHeight : 300
+    minHeight: 300
   },
   media: {
     height: 250,
-    width : 550
+    width: 550
   },
 });
 
@@ -25,19 +25,19 @@ export default function Buttonforblog() {
 
   return (
     <Card className={classes.root}>
-      <Link to = "/blog">
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="https://image.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-260nw-1029506242.jpg"
-          title="Contemplative Reptile"
-        />
-      <CardContent style = {{backgroundColor : "black"}}>
-        <Typography style = {{textAlign : "center", color : "white"}}>
-          Click Here to explore the Blogs
+      <Link to="/blog">
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="https://image.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-260nw-1029506242.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent style={{ backgroundColor: "black" }}>
+            <Typography style={{ textAlign: "center", color: "white" }}>
+              Click Here to explore the Blogs
         </Typography>
-      </CardContent>
-      </CardActionArea>
+          </CardContent>
+        </CardActionArea>
       </Link>
     </Card>
   );

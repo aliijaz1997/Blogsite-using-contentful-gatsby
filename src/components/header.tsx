@@ -149,7 +149,7 @@ const Header = ({ }) => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} style = {{fontWeight : "bolder"}} variant="h6" noWrap>
+          <Typography className={classes.title} style={{ fontWeight: "bolder" }} variant="h6" noWrap>
             Dynamic Blogs
           </Typography>
           <div className={classes.search}>
@@ -168,10 +168,11 @@ const Header = ({ }) => {
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <div className={classes.button}>
-              <Button style= {{backgroundColor : "	black"}} variant="contained"><Link to="/"><span style = {{color : "white"}}>Home</span></Link></Button>
-              <Button style= {{backgroundColor : "	black"}} variant="contained"><Link to="/about"><span style = {{color : "white"}}>About</span></Link></Button>
-              <Button style= {{backgroundColor : "	black"}} variant="contained"><Link to="/blog"><span style = {{color : "white"}}>Blogs</span></Link></Button>
-              <Button style= {{backgroundColor : "	black"}} variant="contained"><Link to="/contact"><span style = {{color : "white"}}>Contact US</span></Link></Button>
+              <Button style={{ backgroundColor: "	black" }} variant="contained"><Link to="/"><span style={{ color: "white" }}>Home</span></Link></Button>
+              <Button style={{ backgroundColor: "	black" }} variant="contained"><Link to="/about"><span style={{ color: "white" }}>About</span></Link></Button>
+              <Button style={{ backgroundColor: "	black" }} variant="contained"><Link to="/blog"><span style={{ color: "white" }}>Blogs</span></Link></Button>
+              <Button style={{ backgroundColor: "	black" }} variant="contained"><Link to="/contact"><span style={{ color: "white" }}>Contact US</span></Link></Button>
+              <Button style={{ backgroundColor: "	black" }} variant="contained"><Link to="/app/login"><span style={{ color: "white" }}>Login</span></Link></Button>
             </div>
           </div>
           <div className={classes.sectionMobile}>

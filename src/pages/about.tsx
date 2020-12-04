@@ -45,10 +45,10 @@ function About() {
                 </div>
                 <div className={classes.root}>
                     <Link to="/blog">
-                    <CardMedia
-                        className={classes.media}
-                        image="https://en.pimg.jp/035/771/922/1/35771922.jpg"
-                    />
+                        <CardMedia
+                            className={classes.media}
+                            image="https://en.pimg.jp/035/771/922/1/35771922.jpg"
+                        />
                     </Link>
                 </div>
             </div>

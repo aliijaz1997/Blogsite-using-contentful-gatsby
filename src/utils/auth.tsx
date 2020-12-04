@@ -12,7 +12,6 @@ export const setUser = (user: {}) =>
   const user = getUser()
   return !!user.email
 }
-
 export const logout = (firebase: { auth: () => { (): any; new(): any; signOut: { (): Promise<any>; new(): any } } }) => {
   return new Promise<void>(resolve => {
     firebase.auth().signOut().then(function() {

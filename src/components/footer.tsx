@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) =>
       // color: theme.palette.text.secondary,
       color: "darkgrey",
       backgroundColor: "#1a1e3b",
-      height : "100px"
+      height: "100px"
     },
   }),
 );
@@ -29,7 +29,7 @@ export default function Footer() {
           Copy right created by Hifz ur Rehman Ali
               <br />
               Select your Language
-              <br/>
+              <br />
           <select data-placeholder="Choose a Language...">
             <option value="AF">Afrikaans</option>
             <option value="SQ">Albanian</option>

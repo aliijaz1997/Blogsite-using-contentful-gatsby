@@ -8,12 +8,12 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
     root: {
         minWidth: 275,
-        backgroundImage : "url(https://wallup.net/wp-content/uploads/2018/09/25/628138-tile-simple-light_blue-748x421.jpg)"
+        backgroundImage: "url(https://wallup.net/wp-content/uploads/2018/09/25/628138-tile-simple-light_blue-748x421.jpg)"
     },
     title: {
         fontSize: 30,
-        fontWeight : 20,
-        color : "brown",
+        fontWeight: 20,
+        color: "brown",
     },
     pos: {
         marginBottom: 12,
@@ -25,30 +25,30 @@ function Contact() {
     return (
         <Layout>
             <div  >
-            <Card className={classes.root} variant="outlined">
-                <CardContent>
-                    <Typography style = {{fontWeight : "bold"}} className={classes.title} gutterBottom>
-                        Contact Us Through Email and Phone.
+                <Card className={classes.root} variant="outlined">
+                    <CardContent>
+                        <Typography style={{ fontWeight: "bold" }} className={classes.title} gutterBottom>
+                            Contact Us Through Email and Phone.
                     </Typography>
-                    <Typography variant="h5" component="h2">
-                        Email : 
+                        <Typography variant="h5" component="h2">
+                            Email :
                     </Typography>
-                    <Typography className={classes.pos} color="textSecondary">
-                              aliijaz2010@yahoo.com
+                        <Typography className={classes.pos} color="textSecondary">
+                            aliijaz2010@yahoo.com
                     </Typography>
-                    <Typography variant="h5" component="h2">
-                        Phone Number : 
+                        <Typography variant="h5" component="h2">
+                            Phone Number :
                     </Typography>
-                    <Typography className={classes.pos} color="textSecondary">
-                        03********3
+                        <Typography className={classes.pos} color="textSecondary">
+                            03********3
                     </Typography>
-                </CardContent>
-            </Card>
-            <span  
-            style = {{
-                fontSize : "2rem"
-            }}
-            >Thanks for your Interest</span>
+                    </CardContent>
+                </Card>
+                <span
+                    style={{
+                        fontSize: "2rem"
+                    }}
+                >Thanks for your Interest</span>
             </div>
         </Layout>
     )

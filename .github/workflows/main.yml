@@ -31,8 +31,7 @@ jobs:
       with:
         cmd: install # will run `yarn install` command
         
-    - name: Build React App
-      run: yarn build
+    - uses: enriikke/gatsby-gh-pages-action@v2
       
     - name: Install Surge
       run: npm install --global surge
